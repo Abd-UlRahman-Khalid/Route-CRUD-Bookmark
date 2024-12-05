@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("./Font/PTSans-Caption.woff") format("woff"),
+    url("./Font/PTSans-Caption.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("./Font/Pacifico-Regular.woff") format("woff"),
+    url("./Font/Pacifico-Regular.woff2") format("woff2");
+}
+:root {
+  --bg-color: #f7ecde;
+  --sec-color: #fec260;
+}
+body {
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 4rem;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  background-color: var(--sec-color);
+  left: 0;
+  bottom: 10px;
+  z-index: -1;
+  cursor: pointer;
+  transition: height 0.5s;
+}
+h1:hover::before {
+  height: 50%;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+label {
+  font-weight: bold;
+}
+
+input::placeholder {
+  font-size: 1.2rem;
+}
+input {
+  font-size: 3rem;
+}
+
+.form-control:focus {
+  border-color: var(--sec-color);
+  box-shadow: 0 0 0 0.25rem rgba(245, 204, 2, 0.25);
+}
+
+td {
+  vertical-align: middle;
+}
+
+main {
+  height: 100vh;
+}
+.rounded-circle {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+.alarm-box {
+  background-color: #0007;
+}
+.box-info {
+  width: 700px;
+}
+.close {
+  border: none;
+  background-color: white;
+  vertical-align: middle;
+}
+
+input:focus {
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
