@@ -1,13 +1,13 @@
 @font-face {
   font-family: "PT Sans";
-  src: url("./Font/PTSans-Caption.woff") format("woff"),
-    url("./Font/PTSans-Caption.woff2") format("woff2");
+  src: url("../Font/PTSans-Caption.woff") format("woff"),
+    url("../Font/PTSans-Caption.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Pacifico";
-  src: url("./Font/Pacifico-Regular.woff") format("woff"),
-    url("./Font/Pacifico-Regular.woff2") format("woff2");
+  src: url("../Font/Pacifico-Regular.woff") format("woff"),
+    url("../Font/Pacifico-Regular.woff2") format("woff2");
 }
 :root {
   --bg-color: #f7ecde;
